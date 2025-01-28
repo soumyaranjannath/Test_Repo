@@ -9,7 +9,7 @@ alter procedure [dbo].[SP_Get_EmployeeDetails]
 			as
 			begin
 			select e.EmployeeName,
-	d.DepartmentName,p.ProjectName,p.StartDate,p.EndDate
+	p.ProjectName,p.StartDate,p.EndDate
 	from Employees e join Departments d on e.DepartmentId=d.DepartmentId
 	join Projects p on e.ProjectId=p.ProjectId and e.DepartmentId=@DepartId		
 			end;
