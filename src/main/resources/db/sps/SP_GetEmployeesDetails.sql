@@ -1,10 +1,10 @@
 --liquibase formatted sql
 
---changeset soumya:removed e.EmployeeId 
+--changeset soumyaranjan:removed_e.EmployeeId 
 --comment comments from eclipse ide
 
 
-create procedure [dbo].[SP_Get_EmployeeDetails]
+alter procedure [dbo].[SP_Get_EmployeeDetails]
 			@DepartId int
 			as
 			begin
